@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+ <div id="conteudo">
+        <header>
+            <h1>Cadastrar</h1>
+        </header>
+        <div id="forms">
+            <form id="form" method="POST" action="/cliente/atualizado">
+                <div class="inputNome">
+                    <input type="text" placeholder="Nome completo" required name="nome" value="{{cliente.name}}">
+                </div>
+
+                <div class="inputEmail">
+                    <input type="email" placeholder="user@exemple.com"  required name="email" value="{{cliente.email}}">
+                </div>
+
+                <div class="inputSenha">
+                    <input type="password" id="inputSenha" placeholder="editar senha" required minlength="10" name="password" value="{{cliente.password}}">
+                </div>
+
+                <button type="submit" id="button">Atualizar</button>
+            </form>
+        </div>
+    </div>
+    </body>
+    </html>
