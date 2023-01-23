@@ -1,0 +1,80 @@
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #271b31;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#conteudo {
+    max-width: 450px;
+    justify-content: center;
+    text-align: center;
+    margin: 5rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+header > h1 {
+    padding: 0 1rem 1rem;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 15px;
+}
+#form {
+    padding: 0 1rem 1rem;
+    margin-bottom: 0.5rem;
+}
+input, button {
+    padding: 5px;
+    margin: 5px;
+}
+input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+}
+button {
+  background-color: transparent;
+  border-color: black;
+  color: black;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+    background-color: black;
+    color: white;
+    transition: all .4s ease-out;
+}
+</style>
+
+<div id="conteudo">
+        <header>
+            <h1>Detalhes da Conta</h1>
+        </header>
+        <div id="forms">
+            <form action="/cliente/detalhes" method="post" id="form">
+                <div class="inputNome">
+                    <input type="text" name="cpf" placeholder="informe o Cpf Para acessar detalhes da conta" required>
+                </div>
+               <a href="/cliente/detalhes"><button type="submit" id="button">ir para detalhes</button></a> 
+            </form>
+        </div>
+    </div>
